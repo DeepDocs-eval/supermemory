@@ -72,7 +72,8 @@ import os
 openai.api_base = "https://api.supermemory.ai/v3/https://api.openai.com/v1"
 openai.api_key = os.environ.get("OPENAI_API_KEY")  # Your regular OpenAI key
 openai.default_headers = {
-    "x-supermemory--api-key": os.environ.get("SUPERMEMORY_API_KEY"),  # Your supermemory key
+    "x-supermemory-api-key": os.environ.get("SUPERMEMORY_API_KEY"),  # Your supermemory key
+    "x-sm-user-id": "Your_users_id"
 }
 
 # Create a chat completion with unlimited context
